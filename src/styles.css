@@ -1,0 +1,209 @@
+@tailwind preflight;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.link-btn {
+  @apply no-underline text-black border-teal-light border-2 py-2 px-4 .font-semibold shadow
+}
+
+.animate {
+  transition: all 0.3s ease;
+}
+
+.background {
+  background-image: linear-gradient(140deg, 
+                                  #64d5ca 0%, 
+                                  #64d5ca 25%, 
+                                  #f1f5f8 25%,
+                                  #f1f5f8 75%,
+                                  #64d5ca 75%, 
+                                  #64d5ca 100%);
+}
+
+.skills-section {
+  height: 100vh;
+  background-color: #f3f3f3;
+}
+
+.skill-size {
+  @apply h-48 w-48
+}
+
+.skill {
+  transition: all .2s;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  @apply shadow-lg
+}
+
+.skill-icon {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.curtain {
+  height: 0;
+  width: 100%;
+  background-color: #00e5ffa5;
+  transition: all .5s; /* easeOutBack */
+  /* transform: translateY(20rem) */
+  
+}
+
+.curtain-text {
+  @apply text-center font-semibold text-xl mt-2 
+}
+
+.skills-text {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.skill:hover  > .curtain{
+  @apply h-16
+}
+
+.skill-set {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #FFF;
+}
+
+.my-summary {
+  @apply mt-6 bg-teal-light shadow-lg  animate h-64 text-3xl font-sans font-semibold p-8
+}
+
+.heading {
+  @apply font-semibold font-sans text-4xl text-center pt-4 
+}
+
+.input {
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  border-radius: 2px;
+  width: 90%;
+  border-bottom: 3px solid transparent;
+  display: block;
+  transition: all .3s;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0,0,0, .1);
+  border-bottom: 3px solid #64d5ca;
+}
+
+.label {
+  transition: all .3s;
+  @apply font-semibold mt-2
+}
+
+.input:placeholder-shown + .label{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+
+@media screen and (max-width: 600px) {
+  header {
+    @apply m-1
+  }
+  .small-flex {
+    @apply flex-col items-center mt-1 pt-1
+  }
+
+  .zero-mt {
+    @apply mt-0
+  }
+  .small-heading {
+    @apply text-3xl text-center mt-4
+  }
+
+  .small-text {
+    @apply text-xl
+  }
+
+  .zero-m {
+    @apply m-0
+  }
+
+  .min-p {
+    @apply p-2
+  }
+  
+  .nothing {
+    @apply hidden
+  }
+
+  .skill-size {
+    @apply h-32 w-32 m-1
+  }
+
+  .aboutme-section {
+    flex-direction: column;
+  }
+
+  .aboutme-logo {
+    @apply h-24
+  }
+  .aboutme-heading {
+    @apply text-xl
+  }
+  .aboutme {
+    @apply leading-none text-left 
+  }
+
+  .skill-set {
+    flex-wrap: wrap;
+  }
+
+  .skills-text {
+    font-size: 1rem;
+    text-align: center;
+    padding: .5rem;
+  }
+  
+  .header-section {
+    @apply h-screen 
+  }
+
+  #aboutme {
+    @apply h-auto
+  }
+
+  .aboutme-width {
+    @apply w-full
+  }
+
+  .my-summary {
+    @apply bg-grey-lighter shadow-none text-xl -mt-2
+  }
+
+  .heading {
+    @apply pt-1 mt-0
+  }
+
+  .curtain {
+    @apply h-8
+  }
+
+  .curtain-text {
+    @apply text-center text-xl mt-1 
+  }
+
+}
