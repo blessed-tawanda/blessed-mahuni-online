@@ -206,4 +206,28 @@
     @apply text-center text-xl mt-1 
   }
 
+  #mytools {
+    @apply h-auto
+  }
+
+  .contact-section {
+    @apply flex-col h-auto items-center mx-auto
+  }
+
+  .input {
+    @apply w-full
+  }
+
+  #contactme {
+    @apply h-auto
+  }
+
+  .small-footer-image {
+    @apply h-24
+  }
+
+  .small-footer-padding {
+    @apply p-2
+  }
+
 }
