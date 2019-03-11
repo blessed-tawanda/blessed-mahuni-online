@@ -14,58 +14,54 @@
   <meta property="og:image:height" content="128">
   <meta property="og:image:width" content="128">
   <title>Blessed T Mahuni | Software Developer </title>
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Oswald" rel="stylesheet">
-</head>
+<link href="styles.css" rel="stylesheet"></head>
 <body class="bg-grey-light">
-  <header class="min-h-screen p-1 header-section ">
-    <div class="sm:ml-12 ml-2 flex items-stretch pt-6 sm:mt-4 mt-4">
-      <div class="sm:ml-8 ml-4 sm:mt-6 mt-3 zero-mt">
-        <img class="logoanimate shadow-md sm:h-48 h-24 hover:shadow-lg animate" src="/img/g1414.png" alt="Blessed T Mahuni Logo">
+  <header class="container mx-auto h-my-screen p-1 m-6 bg-grey-lighter zero-mt header-section">
+    <div class="flex justify-around items-stretch pt-6 mt-4 small-flex">
+      <div class="mt-8 zero-mt">
+        <img class="shadow-md rounded-full h-48 hover:shadow-lg animate" src="./img/logo.png" alt="Blessed T Mahuni Logo">
       </div>
-      <div class="sm:mt-6 -mt-6 pl-4 w-1/3 text-grey-darker">
-        <div class="firstname-position font-semibold font-oswald md:text-6xl text-3xl small-heading"> Blessed </div>
-        <div class="h-1 w-full bg-blue-darker"></div>
-        <div class="surname-position md:mt-5 mt-2 font-semibold font-oswald md:text-6xl text-3xl small-heading"> T Mahuni </div>
-      </div>
-    </div>
-    <div class="p-8 mt-6 mx-auto sm:w-3/4 w-full intro-bg rounded">
-      <h1 style="display: none">Blessed T Mahuni</h1>
-      <p class="font-nato sm:text-3xl text-lg text-grey-light">
-        Hi! 👋 Im a software engineering student at Harare Institute Of Technology welcome to my website feel free to browse through.
-      </p>
-      <div class="mt-8 mx-auto w-full pt-8 zero-mt nothing">
-        <a href="#aboutme" onclick="return false" onmousedown="autoScrollTo('aboutme')" class="link-btn hover:bg-teal-light mr-4 zero-m animate">👨‍💻 About Me</a>
-        <a href="#mytools" onclick="return false" onmousedown="autoScrollTo('mytools')" class="link-btn hover:bg-teal-light m-4 zero-m animate">⚒️ My Tools</a>
-        <a href="#resume" class="link-btn hover:bg-teal-light zero-m m-4 animate">📋 My Resume</a>
-        <a href="https://github.com/blessed-tawanda" target="_blank" class="link-btn hover:bg-teal-light m-4 zero-m animate">💼 My Work</a>
-        <a href="#contactme" onclick="return false" onmousedown="autoScrollTo('contactme')" class="link-btn hover:bg-teal-light zero-m m-4 animate">📮 Contact Me</a>
+      <div class="-mt-4">
+        <h1 class="font-semibold font-sans text-5xl small-heading"> Blessed T Mahuni </h1>
+        <div class="my-summary hover:shadow-md" >
+          <ul class="mt-6 zero-mt">
+            <li>Web Developer</li>
+            <li>Artficial Intelligence & Machine Learning Enthusiast</li>
+            <li>Desktop & Mobile Developer</li>
+            <li>A big fan of Blockchain</li>
+          </ul>
+        </div>
+        <div class="mt-8 pt-8 zero-mt nothing">
+          <a href="#aboutme" class="link-btn hover:bg-teal-light mr-4 zero-m animate">About Me</a>
+          <a href="#mytools" class="link-btn hover:bg-teal-light m-4 zero-m animate">My Tools</a>
+          <a href="#mywork" class="link-btn hover:bg-teal-light m-4 zero-m animate">My Work</a>
+          <a href="#contactme" class="link-btn hover:bg-teal-light zero-m m-4 animate">Contact Me</a>
+        </div>
       </div>
     </div>
   </header>
-  <main>
-    <section id="aboutme" class="min-h-screen mt-8">
-      <div class="shadow-lg intro-bg mt-10 m-8 p-4">
-          <h2 class="heading small-heading font-nato">About Me</h2>
-          <div class="flex justify-end aboutme-section">
-            <div class="nothing">
-              <img class="shadow-lg aboutme-logo" src="img/g1414.png" alt="my logo">
-            </div>
-            <div class="sm:w-3/4">
-              <h3 class="font-semibold font-nato sm:text-2xl text-xl p-4 aboutme-heading">Here is a short story about me 😃</h3>
-              <p class="sm:text-xl text-base font-nato sm:leading-tight leading-loose text-justify sm:p-4 p-2 aboutme">
-                I started programming when I was 16, since then i have always been a fan of technology. I like improving myself by getting
-                involved in as many projects as I can, if you want me to do a project for you <a class="link-color" href="#contactme">[Contact Me]</a>. 
-                I am currently in my 2nd year at <a class="link-color" href="https://www.hit.ac.zw" target="_blank"> Harare Institute Of Technology </a> doing Software Engineering, 
-                my areas of interest are Web Development, Artificial Intelligence and Machine Learning you can checkout some of my work at <a href="https://www.github.com/blessed-tawanda" class="link-color" target="_blank">GitHub</a>. I am also a member of HIT Web Tech as current Chairperson. 
-              </p>
-            </div>
-          </div>
+  <main class="mt-8">
+    <section id="aboutme" class="background container mx-auto h-my-screen p-1 m-6 bg-grey-lighter">
+      <h2 class="heading small-heading">About Me</h2>
+      <div class="flex justify-end aboutme-section">
+        <div>
+          <img class="shadow-lg rounded-full aboutme-logo" src="./img/logo.png" alt="my logo">
+        </div>
+        <div class="w-3/4 aboutme-width">
+          <h3 class="font-semibold font-sans text-2xl p-4 aboutme-heading">Hi, Im Blessed. My friends call me Woody. Im a programmer</h3>
+          <p class="text-xl font-sans leading-tight text-justify p-4 aboutme">
+            I started programming when I was 16, since then i have always been a fan of technology. I like improving myself by getting
+            involved in as many projects as I can, if you want me to do a project for you <a class="text-teal-dark" href="#contactme">[Contact Me]</a>. 
+            I am currently in my 2nd year at <a class="text-teal-dark" href="https://www.hit.ac.zw" target="_blank"> Harare Institute Of Technology </a> doing Software Engineering, 
+            my areas of interest are Web Development, Artificial Intelligence and Machine Learning you can checkout some of my work at <a href="https://www.github.com/blessed-tawanda" class="text-teal-dark" target="_blank">GitHub</a>. I am also a member of HIT Web Tech as current Chairperson. 
+          </p>
+        </div>
       </div>
     </section>
-    <section id="mytools" class="min-h-screen p-1 m-6">
+    <section id="mytools" class="container mx-auto h-my-screen p-1 m-6 bg-grey-lighter">
       <div>
-        <h2 class="font-semibold font-nato text-4xl text-center pt-4 small-heading"> My Tools</h2>
-        <p class="skills-text font-nato"> I use these tools to do my Web Development, Desktop Development, Mobile Development and Machine Learning </p>
+        <h2 class="font-semibold font-sans text-4xl text-center pt-4 small-heading"> My Tools</h2>
+        <p class="skills-text"> I use these tools to do my Web Development, Desktop Development, Mobile Development and Machine Learning </p>
       </div>
       <div class="skill-set">
         <div class="skill-size skill ">
@@ -152,45 +148,45 @@
         </div>
       </div>
     </section>
-    <section id="contactme" class="mx-auto min-h-screen p-1 m-6">
-      <h2 class="heading font-nato">Contact Me</h2>
-      <p class="text-black text-center font-nato text-xl p-8">
-        👉 So if you need a software system developed, I'm your guy. I can develop a website with a sleek design, I can also develop mobile and desktop applications and systems. Just contact me at 
+    <section id="contactme" class="container mx-auto h-auto p-1 m-6 bg-grey-lighter">
+      <h2 class="heading">Contact Me</h2>
+      <p class="text-black text-center font-sans text-xl p-8">
+        &bigstar; If you need a software system developed, I'm your guy. I can develop a website with a sleek design, I can also develop mobile and desktop applications and systems. Just contact me at 
       </p>
-      <div class="sm:flex justify-around p-4 contact-section intro-bg">
-        <div class="sm:h-24 h-12 text-center cursor-pointer">  
+      <div class="flex justify-around p-4 h-32 contact-section">
+        <div class="h-24 text-center cursor-pointer">  
           <span class="flex flex-col">
             <div>
-              <svg class="sm:h-16 h-8 p-2" fill="#0093E9">
+              <svg class="h-16 p-2" fill="#64d5ca">
                 <use xlink:href="img\symbol-defs.svg#icon-whatsapp"></use>
               </svg>
             </div>
             <div>
-                <span class="mt-2 p-2 font-semibold font-nato">+263776224111</span>
+                <span class="mt-2 p-2 font-semibold">+263776224111</span>
             </div>
           </span>
        </div>
-        <div class="sm:h-24 h-12 text-center"> 
+        <div class="h-24 text-center"> 
           <a class="no-underline flex flex-col" href="https://m.me/tawanda.187" target="_blank">
              <div>
-                <svg class="sm:h-16 h-8 p-2" fill="#0093E9">
+                <svg class="h-16 p-2" fill="#64d5ca">
                     <use xlink:href="img\symbol-defs.svg#icon-facebook"></use>
                 </svg>
              </div>
              <div>
-                <span class="mt-2 p-2 text-black font-semibold font-nato">Facebook</span>
+                <span class="mt-2 p-2 text-black font-semibold">Facebook</span>
              </div>
           </a>
         </div>
-        <div class="sm:h-24 h-12 text-center">
+        <div class="h-24 text-center">
             <a class="no-underline flex flex-col" href="https://twitter.com/WoodyJohnsonMah" target="_blank">
               <div>
-                  <svg class="sm:h-16 h-8 sm:h-8 p-2" fill="#0093E9">
+                  <svg class="h-16 p-2" fill="#64d5ca">
                       <use xlink:href="img\symbol-defs.svg#icon-twitter"></use>
                   </svg>
               </div>
               <div>
-                  <span class="mt-2 p2 text-black font-semibold font-nato">Twitter</span>
+                  <span class="mt-2 p2 text-black font-semibold">Twitter</span>
               </div>
             </a>
         </div>
@@ -200,7 +196,7 @@
       <hr>
       <div class="p-4 m-4 shadow background">
         <p class="text-black text-center font-sans text-xl p-1">Leave a message and I will get back to you as soon as possible</p>
-        <form class="mt-4" action="">
+        <form class="mt-4" name="contact" netlify>
           <div>
               <input class="input px-2 py-4 text-xl" placeholder="Email Address" type="email" name="email">
               <label for="email" class="label">Email Address</label>
@@ -216,16 +212,16 @@
       </div>
     </section>
   </main>
-  <footer netlify class="mt-8 m-0 p-0 h-64 bg-teal-light flex contact-section">
+  <footer class="mt-8 m-0 p-0 h-64 bg-teal-light flex contact-section">
     <div class="p-8 small-footer-padding">
-      <img src="img/logo.png" alt="logo footer" class="h-48 small-footer-image">
+      <img src="./img/logo.png" alt="logo footer" class="h-48 small-footer-image">
     </div>
     <div class="p-8 small-footer-padding">
       <p>
-        Built by <a class="no-underline text-white font-semibold hover:underline animate" href="https://www.twitter.com/WoodyJohnsonMah"> Blessed T Mahuni </a>. Copyright &copy;
+        Built by <a class="no-underline text-white font-semibold hover:underline animate" href="https://www.twitter.com/WoodyJohnsonMah"> Blessed T Mahuni </a> a professional software engineer. Copyright &copy; This is a professional personal website all rights reserved.
       </p>
+      
     </div>
   </footer>
-  <script src="/js/autoscroll.js"></script>
-</body>
+<script type="text/javascript" src="main.js"></script></body>
 </html>
